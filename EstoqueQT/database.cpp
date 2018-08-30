@@ -10,6 +10,7 @@ SqlDatabase::SqlDatabase(const QString dataBaseName)
     db.setUserName("root");
     db.setPassword("123456");
 
+
     if(db.open())
     {
         qDebug() << "Conexão aberta";
@@ -75,6 +76,20 @@ SqlDatabase::~SqlDatabase()
     query.prepare("INSERT INTO produtos (nome) values (?)");
 
     query.bindValue(0,name);
+
+    if(!query.exec())
+    {
+        if(QMessageBox::critical(0,"ERRO","Erro ao adicionar produto do estoque: " + query.lastError().text() ))
+            qApp->quit();
+    }
+
+
+ }
+ void SqlDatabase::addFilial(QString namefilial)
+ {
+    query.prepare("INSERT INTO produtos (nomefilial) values (?)");
+
+    query.bindValue(0,namefilial);
 
     if(!query.exec())
     {

@@ -28,7 +28,7 @@ void CadastroFilial::on_btnCadastraFilial_clicked()
     //Se forem validos envia para janela de confirmação
     if(ok)
     {
-        SqlDatabase::addProduct(ui->txtCadastroNomeFilial->text().toLower());
+        SqlDatabase::addFilial(ui->txtCadastroNomeFilial->text().toLower());
         parentWidget()->show();
         close();
     }
