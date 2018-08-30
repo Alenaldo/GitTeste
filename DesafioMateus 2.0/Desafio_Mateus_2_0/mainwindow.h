@@ -2,8 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "cadastrofilial.h"
-#include "cadastroproduto.h"
+#include <QWidget>
+#include <QObject>
+#include <QDebug>
+#include <cadastrofilial.h>
+#include <cadastroproduto.h>
 
 namespace Ui {
 class MainWindow;
@@ -19,13 +22,11 @@ public:
 
 private slots:
     void on_btnFilial_clicked();
-
     void on_btnProduto_clicked();
 
 private:
-    Ui::MainWindow *ui;
+    Ui::MainWindow *ui;    
     CadastroFilial *cFilial;
-
     CadastroProduto *cProduto;
 
 };

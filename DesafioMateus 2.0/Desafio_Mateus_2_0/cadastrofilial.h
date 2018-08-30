@@ -1,7 +1,10 @@
 #ifndef CADASTROFILIAL_H
 #define CADASTROFILIAL_H
+
+#include <QMainWindow>
 #include <QWidget>
-#include <string>
+#include <QObject>
+#include <QDebug>
 
 using namespace std;
 

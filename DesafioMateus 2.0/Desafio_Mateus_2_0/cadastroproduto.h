@@ -1,7 +1,9 @@
 #ifndef CADASTROPRODUTO_H
 #define CADASTROPRODUTO_H
+#include <QMainWindow>
 #include <QWidget>
-#include <string>
+#include <QObject>
+#include <QDebug>
 
 using namespace std;
 

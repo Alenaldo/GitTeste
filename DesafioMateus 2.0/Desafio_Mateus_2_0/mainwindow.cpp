@@ -13,19 +13,12 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    //Criando um novo objeto de FormSecundario
-    cFilial = new CadastroFilial();
-    cProduto = new CadastroProduto();
+
+
 }
 
 MainWindow::~MainWindow()
 {
-    cFilial->close();
-    delete cFilial;
-
-    cProduto->close();
-    delete cProduto;
-
     delete ui;
 }
 

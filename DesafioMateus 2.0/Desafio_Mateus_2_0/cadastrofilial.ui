@@ -13,55 +13,6 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>60</y>
-     <width>101</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Nome da Produto:</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_2">
-   <property name="geometry">
-    <rect>
-     <x>480</x>
-     <y>60</y>
-     <width>75</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Sair</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="txtCadastroNomeProduto">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>60</y>
-     <width>211</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btnCadastraFilial">
-   <property name="geometry">
-    <rect>
-     <x>380</x>
-     <y>60</y>
-     <width>75</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Cadastrar</string>
-   </property>
-  </widget>
  </widget>
  <resources/>
  <connections/>
