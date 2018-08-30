@@ -3,7 +3,7 @@
 # Project created by QtCreator 2018-08-30T10:16:42
 #
 #-------------------------------------------------
-
+QT += sql
 QT       += core gui widgets
 
 TARGET = EstoqueQT

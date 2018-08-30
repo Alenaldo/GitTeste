@@ -8,7 +8,7 @@ SqlDatabase::SqlDatabase(const QString dataBaseName)
 
     db.setDatabaseName(dataBaseName);
     db.setUserName("root");
-     db.setPassword("123456");
+    db.setPassword("123456");
 
     if(db.open())
     {
