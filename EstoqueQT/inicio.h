@@ -6,6 +6,7 @@
 #include "cadastroproduto.h"
 #include "consultar.h"
 #include "criapedido.h"
+#include "database.h"
 
 namespace Ui {
 class Inicio;

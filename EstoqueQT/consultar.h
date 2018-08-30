@@ -2,6 +2,8 @@
 #define CONSULTAR_H
 #include <QWidget>
 #include <string>
+#include "database.h"
+
 
 using namespace std;
 

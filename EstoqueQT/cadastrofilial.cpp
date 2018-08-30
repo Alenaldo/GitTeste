@@ -1,5 +1,6 @@
 #include "cadastrofilial.h"
 #include "ui_cadastrofilial.h"
+#include "database.h"
 #include <string>
 #include <sstream>
 
@@ -14,4 +15,21 @@ CadastroFilial::CadastroFilial(QWidget *parent) :
 CadastroFilial::~CadastroFilial()
 {
     delete ui;
+}
+
+void CadastroFilial::on_btnCadastraFilial_clicked()
+{
+    //Pega dados do produto para confirmar preenchimento..
+
+    QString name = ui->txtCadastroNomeFilial->text();
+   // int id = ui->id++->value();
+    bool ok = true;
+
+    //Se forem validos envia para janela de confirmação
+    if(ok)
+    {
+        SqlDatabase::addProduct(ui->txtCadastroNomeFilial->text().toLower());
+        parentWidget()->show();
+        close();
+    }
 }

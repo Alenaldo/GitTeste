@@ -14,3 +14,8 @@ CadastroProduto::~CadastroProduto()
 {
     delete ui;
 }
+
+void CadastroProduto::on_btnCadastroProduto_clicked()
+{
+
+}

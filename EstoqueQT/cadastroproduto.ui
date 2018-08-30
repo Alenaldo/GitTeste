@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>CadastroFilial</class>
- <widget class="QWidget" name="CadastroFilial">
+ <class>CadastroProduto</class>
+ <widget class="QWidget" name="CadastroProduto">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -36,7 +36,7 @@
     <string>Sair</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btnCadastraProduto">
+  <widget class="QPushButton" name="btnCadastroProduto">
    <property name="geometry">
     <rect>
      <x>390</x>

@@ -28,14 +28,16 @@ SOURCES += \
     cadastrofilial.cpp \
     cadastroproduto.cpp \
     consultar.cpp \
-    criapedido.cpp
+    criapedido.cpp \
+    database.cpp
 
 HEADERS += \
         inicio.h \
     cadastrofilial.h \
     cadastroproduto.h \
     consultar.h \
-    criapedido.h
+    criapedido.h \
+    database.h
 
 FORMS += \
         inicio.ui \

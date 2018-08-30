@@ -2,6 +2,7 @@
 #include "ui_inicio.h"
 #include <QWidget>
 #include <sstream>
+#include "database.h"
 
 Inicio::Inicio(QWidget *parent) :
     QMainWindow(parent),

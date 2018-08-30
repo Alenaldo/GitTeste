@@ -2,6 +2,8 @@
 #define CADASTROPRODUTO_H
 #include <QWidget>
 #include <string>
+#include "database.h"
+
 
 using namespace std;
 
@@ -16,6 +18,9 @@ class CadastroProduto : public QWidget
 public:
     explicit CadastroProduto(QWidget *parent = nullptr);
     ~CadastroProduto();
+
+private slots:
+    void on_btnCadastroProduto_clicked();
 
 private:
     Ui::CadastroProduto *ui;
