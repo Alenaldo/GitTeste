@@ -2,7 +2,6 @@
 #define DATABASE_H
 
 #include <QtSql>
-//#include <QtSql/QtSql>
 #include <QString>
 #include <QDebug>
 #include <QMessageBox>
@@ -16,20 +15,28 @@ public:
     SqlDatabase(const QString dataBaseName);
     ~SqlDatabase();
 
-    //Representa a informação guardada no banco de dados(produto).
-    struct data
+    //Representa a informação guardada no banco de dados(Filiais).
+    struct filiais
     {
         int idfilial;
-        QString namefilial;
-        int idproduto;
+        QString namefilial;        
+    };
+    struct produto
+    {
+        int idProduto;
         QString nameproduto;
+    };
+    struct estoque
+    {
+        int idfilial;
+        int ifproduto;
         double quanttotal;
         double quantreservado;
         double quantdisponivel;
     };
 
  //  Procura string na coluna name dentro do banco de dados.
-    QVector<SqlDatabase::data> static searchByName(QString namefilial);
+    QVector<SqlDatabase::filiais> static searchByName(QString namefilial);
     static QSqlTableModel *makeTableModel();
     static void deleteFilial(int idfilial);
     static void deleteProduct(int idproduto);
